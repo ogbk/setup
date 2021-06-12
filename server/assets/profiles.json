@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ogbu_olu",
+    "name": "Ogbu Olu",
+    "title": "First Class: Hunter, Karate king and Swordman. And web developer",
+    "belts": [
+      "Winner: Norwegian Association of karate, boxing and swordmanship",
+      "First Class: Indian League of hunters",
+      "Chairman: Madagascar Sea Patrol"
+    ],
+    "favourite food": "plantain and tangerine (vegetarian)"
+  },
+  {
+    "id": "jet_li",
+    "name": "Jet Li",
+    "title": "Master of the 16 ways of the dragon. Hollywood superstar.",
+    "belts": [
+      "Strongman: Top tai chi destroyer, class 1994",
+      "Dragon killer: Most feared fist fighter, class 2016"
+    ],
+    "favourite food": "fufu and egusi soup"
+  }
+]
