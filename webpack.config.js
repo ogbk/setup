@@ -10,14 +10,19 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: `${__dirname}/client/public`,
-    port: CLIENT_PORT,
-    proxy: {
-      '/api/**': {
-        'target': `http://localhost:${SERVER_PORT}`,
-      },
+    static: {
+      directory: `${__dirname}/client/public`,
     },
+    compress: true,
+    port: CLIENT_PORT,
+    proxy: [
+      {
+        context: ['/api'],
+        target: `http://localhost:${SERVER_PORT}`,
+      }
+    ]
   },
+  mode: 'development',
   module: {
     rules: [
       { test: /\.js$/, use: 'babel-loader', exclude: /(node_modules)/ },
